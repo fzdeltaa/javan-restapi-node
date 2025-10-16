@@ -154,3 +154,21 @@ Api user sederhana, dideploy di AWS EC2 dengan alamat: http://54.169.204.0:3000/
             "message": "Invalid input: expected number, received NaN"
         }
         ```
+
+## Installation
+### 1. Clone Repo 
+    `git clone https://github.com/fzdeltaa/javan-restapi-node.git`
+### 2. Install Dependency 
+    `npm ci`
+### 3. Create Database (if not Exist) 
+```
+    CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL UNIQUE,
+    age INTEGER
+    );
+  ```
+### 4. Run
+`npm run test` or `npm run start`
+
