@@ -4,7 +4,7 @@ const port = process.env.PORT || 3000;
 
 app.use(express.json());
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send("There's nothing header, go to /users/")
 });
 
 app.use('/users', require('./routes/users-route'));
